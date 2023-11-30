@@ -6,6 +6,7 @@ import PageNotFound from "./Components/Pages/PageNotFound/PageNotFound"
 import { Box } from "@chakra-ui/react"
 import NavIndex from "./Components/Navigation/Index"
 import VendorPage from "./Components/Pages/Vendors/Vendor"
+import Footer from "./Components/Sections/Footer/Footer"
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="vendors" element={<VendorPage />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
+      <Footer />
     </Box>
   )
 }
