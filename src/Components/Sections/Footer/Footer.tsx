@@ -36,7 +36,7 @@ export default function Footer() {
                     </HStack>
                     <Divider p="10px 0px" />
                     <Stack align="center">
-                       <Text color="white">Designed With love by J</Text>
+                        <Text color="white">Footer credits and or / links goes here</Text>
                     </Stack>
                 </Stack>
             </footer>
