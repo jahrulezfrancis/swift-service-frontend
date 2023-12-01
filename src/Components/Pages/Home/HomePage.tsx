@@ -1,10 +1,12 @@
-import { Box, Heading, Stack, Flex, Tabs, TabList, Tab, HStack, TabPanel, TabPanels, Accordion, AccordionIcon, AccordionButton, AccordionItem, AccordionPanel, Spacer, Text, Icon, } from "@chakra-ui/react";
+import { Box, Heading, Stack, Flex, Tabs, TabList, Tab, HStack, TabPanel, TabPanels, Accordion, AccordionIcon, AccordionButton, AccordionItem, AccordionPanel, Spacer, Text, Icon, Center, } from "@chakra-ui/react";
 import HeroSlider from "../../Sections/Slider/HeroSlider";
 import ServiceCard from "../../Reuseables/Cards/ServiceCard";
 import RestaurantsCard from "../../Reuseables/Cards/FoodMenuCard";
 import { BsCartPlusFill } from "react-icons/bs";
+import { HiPlusCircle } from "react-icons/hi";
 import ListItemComp from "../../Sections/listItems";
 import DemoPic from "../../../assets/raspberries.jpg"
+
 
 
 export default function Homepage() {
@@ -30,13 +32,14 @@ export default function Homepage() {
                 <section style={{ background: "white", marginTop: "-50px" }}>
                     <Box p="50px 0px 20px 0px" bg="white">
                         <Flex align="center" justify='center'>
-                            <Accordion borderRadius={8} border="1px #CECECE solid" w="85vw" defaultIndex={[0]} allowMultiple>
+                            <Accordion borderRadius={8} border="1px #CECECE solid" w="85vw" defaultIndex={[1]} allowMultiple>
                                 <AccordionItem>
                                     <h2>
                                         <AccordionButton>
-                                            <Box flex='1' textAlign='center'>
+                                            <Center gap={1} display="flex" flex='1' textAlign='center'>
+                                                <Icon fontSize={30} as={HiPlusCircle} />
                                                 <Heading textAlign="center" fontSize={30}>Request Service</Heading>
-                                            </Box>
+                                            </Center>
                                             <AccordionIcon />
                                         </AccordionButton>
                                     </h2>
